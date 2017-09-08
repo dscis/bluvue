@@ -1,6 +1,6 @@
 {
   "name": "bluvue",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "David <dscis.git@mailnull.com>",
   "private": false,
@@ -30,7 +30,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "bulma": "^0.2.3",
+    "bulma": "^0.5.1",
     "flatpickr": "^2.4.3",
     "font-awesome": "^4.7.0",
     "jump.js": "^1.0.1",
