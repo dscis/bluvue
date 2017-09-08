@@ -15,7 +15,6 @@ import Tag from './components/tag';
 import Modal from './components/modal';
 import ProgressBar from './components/progressbar';
 import Alert from './components/alert';
-import { Breadcrumb, BreadcrumbItem } from './components/breadcrumb';
 import { Collapse, CollapseItem } from './components/collapse';
 import { Tabs, TabItem } from './components/tab';
 import { Menus, MenuItem } from './components/menu';
@@ -45,8 +44,6 @@ const components = {
   Modal,
   ProgressBar,
   Alert,
-  Breadcrumb,
-  BreadcrumbItem,
   Collapse,
   CollapseItem,
   Tabs,
