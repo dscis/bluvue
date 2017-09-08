@@ -3993,12 +3993,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 118 */
 /***/ (function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.default = {
+	  props: {
+	    separator: {
+	      type: String,
+	      default: '>'
+	    }
+	  },
 	  computed: {
 	    $items: function $items() {
 	      return this.$children;
@@ -4032,10 +4038,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: ''
 	    }
 	  },
+	
+	  data: function data() {
+	    return {
+	      separator: ''
+	    };
+	  },
+	
+	
 	  computed: {
 	    hasSlot: function hasSlot() {
 	      if (_utils2.default.isEmpty(this.$slots)) return false;
 	      return true;
+	    }
+	  },
+	
+	  mounted: function mounted() {
+	    var index = this.$parent.$items.indexOf(this);
+	    var itemsNum = this.$parent.$items.length;
+	    if (itemsNum !== index + 1) {
+	      this.separator = this.$parent.separator;
 	    }
 	  }
 	};
@@ -15203,7 +15225,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    attrs: {
 	      "href": _vm.to
 	    }
-	  }, [_vm._v(_vm._s(_vm.label))]) : _vm._e(), _vm._v(" "), _vm._t("default")], 2)
+	  }, [_vm._v(_vm._s(_vm.label))]) : _vm._e(), _vm._v(" "), _vm._t("default"), _vm._v(" "), (_vm.separator) ? _c('span', {
+	    staticClass: "breadcrumb-separator"
+	  }, [_vm._v(_vm._s(_vm.separator))]) : _vm._e()], 2)
 	},staticRenderFns: []}
 
 /***/ }),

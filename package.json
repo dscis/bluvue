@@ -1,6 +1,6 @@
 {
   "name": "bluvue",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "David <dscis.git@mailnull.com>",
   "private": false,
