@@ -4,9 +4,13 @@ author isn't maintaining the package. So I created this fork do so myself. Prima
 Bulma.io in line. Any bugs unresolved in the original package will be addressed in time.
 
 # Upgrade (Sept 2017)
+Depedencies
 * Bulma 0.2.3 > 0.5.1
 * Vue.JS  2.1.10 > 2.4.2
 * Vue-Router 2.1.1 > 2.7.0
+
+* Remove breadcrumbs
+* Update tags sass
 
 # Bluvue
 Bluvue is an ui components library base on VueJS and Bulma that helps you build your web application easily

@@ -5820,21 +5820,6 @@ label.panel-block {
     left: auto;
     right: 0; }
 
-.breadcrumb li {
-  display: inline-block;
-  margin-left: 0 !important;
-  padding-left: 0 !important; }
-  .breadcrumb li a.active {
-    color: #666;
-    cursor: text; }
-  .breadcrumb li i {
-    vertical-align: baseline;
-    margin-right: 3px; }
-
-.breadcrumb-separator {
-  margin-left: 3px;
-  margin-right: 2px; }
-
 .blu-checkbox {
   padding-left: 20px;
   user-select: none; }
@@ -6780,6 +6765,9 @@ label.panel-block {
       background: #fff; }
       .is-slideshow .tab-list li.is-active a {
         /*background: #fff;*/ }
+
+.tag {
+  border-radius: 290486px; }
 
 .is-square {
   border-radius: 3px;
@@ -10217,15 +10205,6 @@ label.panel-block {
 html {
   overflow-x: visible;
   overflow-y: visible; }
-
-/** Bulma 0.5 update */
-html {
-  font-size: 14px; }
-
-small {
-  font-size: 11px; }
-
-/** End Bulma 0.5 update */
 
 .dropdown-content {
   padding: 3px 0;
