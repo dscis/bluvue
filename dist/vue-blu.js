@@ -6103,6 +6103,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        reference.addEventListener('blur', this.toggle);
 	      } else if (this.trigger === 'click') {
 	        reference.addEventListener('click', this.handleClick);
+	      } else if (this.trigger === 'hoverclick') {
+	        reference.addEventListener('click', this.handleClick);
+	        reference.addEventListener('mouseenter', this.createInstance);
+	        reference.addEventListener('mouseleave', this.hidePopper);
 	      } else {
 	        reference.addEventListener('mouseenter', this.createInstance);
 	        reference.addEventListener('mouseleave', this.hidePopper);
@@ -6115,6 +6119,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.reference.removeEventListener('blur', this.toggle);
 	      } else if (this.trigger === 'click') {
 	        this.reference.removeEventListener('click', this.handleClick);
+	      } else if (this.trigger === 'hoverclick') {
+	        this.reference.removeEventListener('click', this.handleClick);
+	        this.reference.removeEventListener('mouseenter', this.createInstance);
+	        this.reference.removeEventListener('mouseleave', this.hidePopper);
 	      } else {
 	        this.reference.removeEventListener('mouseenter', this.createInstance);
 	        this.reference.removeEventListener('mouseleave', this.hidePopper);
